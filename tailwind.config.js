@@ -4,14 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        darkBlue: "#000A2D",
+        darkBlue: "#000000",
 
         // lightBlue: "#3267FF",
-        lightBlue: "#00367d",
-        skyBlue: "#2087FF",
+        lightBlue: "#74041c",
+        skyBlue: "#942c14",
         muted: "#636571",
         transparent: "#CBD9FF",
-        extraDark: "#00071D",
+        extraDark: "#7c141c",
         fadeBlue: "#5A81EE",
       },
       backgroundSize: {

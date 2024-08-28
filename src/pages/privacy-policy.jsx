@@ -1,9 +1,8 @@
-import React from "react";
 import { Heading } from "../components";
 
 export default function PrivacyPolicy() {
   return (
-    <div className="flex w-full flex-col items-center gap-8 p-12">
+    <div className="flex w-full flex-col items-center gap-8 p-12 py-14">
       <Heading title={"Privacy Policy"} className={""} />
       <p className="family-poppins text-[1rem] text-gray-700">
         This privacy policy ("Policy") describes how Mediways ("Mediways," "we,"
@@ -16,7 +15,7 @@ export default function PrivacyPolicy() {
         companies not owned or controlled by us, or to individuals not employed
         or managed by us.
       </p>
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           Automatic Collection of Information
         </h1>
@@ -31,7 +30,7 @@ export default function PrivacyPolicy() {
           users.{" "}
         </p>
       </div>{" "}
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           Collection of Personal Information{" "}
         </h1>
@@ -55,7 +54,7 @@ export default function PrivacyPolicy() {
           information is mandatory, please contact us.
         </p>
       </div>{" "}
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           Use and Processing of Collected Information{" "}
         </h1>
@@ -88,7 +87,7 @@ export default function PrivacyPolicy() {
           requirements.
         </p>
       </div>
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           Billing and Payments{" "}
         </h1>
@@ -99,7 +98,7 @@ export default function PrivacyPolicy() {
           reviewing these policies.
         </p>
       </div>{" "}
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           Managing Information{" "}
         </h1>
@@ -110,7 +109,7 @@ export default function PrivacyPolicy() {
           accounts, please contact us.{" "}
         </p>
       </div>{" "}
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           Disclosure of Information{" "}
         </h1>
@@ -127,7 +126,7 @@ export default function PrivacyPolicy() {
           accounts and Personal Information may be transferred.
         </p>
       </div>{" "}
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           Retention of Information
         </h1>
@@ -139,8 +138,7 @@ export default function PrivacyPolicy() {
           Information will be deleted after the retention period.
         </p>
       </div>
-
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           Rights of Users
         </h1>
@@ -152,8 +150,7 @@ export default function PrivacyPolicy() {
           machine-readable format.
         </p>
       </div>
-
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           How to Exercise These Rights
         </h1>
@@ -163,8 +160,7 @@ export default function PrivacyPolicy() {
           cannot fulfill requests without verifying identity or authority.
         </p>
       </div>
-
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           Privacy of Children
         </h1>
@@ -177,8 +173,7 @@ export default function PrivacyPolicy() {
           enough to consent in their country.
         </p>
       </div>
-
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           Cookies
         </h1>
@@ -191,8 +186,7 @@ export default function PrivacyPolicy() {
           Learn more about cookies and management at internetcookies.org.
         </p>
       </div>
-
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           Do Not Track Signals
         </h1>
@@ -204,8 +198,7 @@ export default function PrivacyPolicy() {
           personal information use is limited.
         </p>
       </div>
-
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           Email Marketing
         </h1>
@@ -217,8 +210,7 @@ export default function PrivacyPolicy() {
           can stop receiving newsletters or marketing emails by unsubscribing.
         </p>
       </div>
-
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           Links to Other Websites
         </h1>
@@ -228,8 +220,7 @@ export default function PrivacyPolicy() {
           statements of each site they visit that collects Personal Information.
         </p>
       </div>
-
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           Information Security
         </h1>
@@ -240,8 +231,7 @@ export default function PrivacyPolicy() {
           online security and privacy limitations exist.
         </p>
       </div>
-
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           Data Breach
         </h1>
@@ -252,8 +242,7 @@ export default function PrivacyPolicy() {
           of potential harm risks or as required by law.
         </p>
       </div>
-
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           Changes and Amendments
         </h1>
@@ -265,8 +254,7 @@ export default function PrivacyPolicy() {
           the revised Policy.
         </p>
       </div>
-
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           Acceptance of This Policy
         </h1>
@@ -276,8 +264,7 @@ export default function PrivacyPolicy() {
           agree, you must discontinue use of the Website and Services.
         </p>
       </div>
-
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           Contacting Us
         </h1>

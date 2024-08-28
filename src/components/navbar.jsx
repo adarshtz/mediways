@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import logo from "../../public/logo.png";
 import { callAPI } from "../App";
+import { useContext } from "react";
+import { FormContext } from "../../contextprovider";
 
 const Navbar = () => {
   const [toggleNavbar, setToggleNavbar] = useState(false);
@@ -12,6 +14,8 @@ const Navbar = () => {
   const [parsedData, setParsedData] = useState(null);
 
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
+
+  const { isFormActive, setIsFormActive } = useContext(FormContext);
 
   const toggleDropDown = () => {
     setIsDropDownOpen(!isDropDownOpen);
@@ -32,6 +36,7 @@ const Navbar = () => {
     };
 
     fetchData();
+    console.log("The value is", isFormActive);
   }, []);
 
   const handleToggle = () => {
@@ -82,7 +87,7 @@ const Navbar = () => {
                   </span>
                   {parsedData && (
                     <ul className="dropdown-content pt-6">
-                      {parsedData.map((item, index) => (
+                      {parsedData.map((item) => (
                         <li key={item.id} className="flex items-center">
                           <Link
                             to={`/specialities/${item.link}`}
@@ -104,12 +109,13 @@ const Navbar = () => {
           </div>
         ))}
       </ul>
-      <div className="hidden items-center lg:flex">
-        <Link to={"/campaigns"}>
-          <button className="family-sora h-[3.4rem] rounded-full border bg-lightBlue px-10 text-[1rem] font-semibold text-white active:bg-lightBlue/95">
-            Explore Campaigns
-          </button>
-        </Link>
+      <div className="hidden items-center gap-2 lg:flex">
+        <button
+          className="family-sora h-[3.4rem] rounded-full border border-lightBlue bg-white px-10 text-[1rem] font-semibold text-lightBlue active:bg-lightBlue/95 active:text-white"
+          onClick={() => setIsFormActive(!isFormActive)}
+        >
+          Create Campaign
+        </button>
       </div>
       <div className="flex w-full justify-end py-5 lg:hidden">
         <button onClick={handleToggle} className="z-10">
@@ -133,7 +139,10 @@ const Navbar = () => {
                           <ul className="mt-3 w-[12rem] rounded-md bg-gray-100 text-center text-darkBlue">
                             {parsedData.map((item, index) => (
                               <div key={index}>
-                                <Link to={`/specialities/${item.link}`}>
+                                <Link
+                                  to={`/specialities/${item.link}`}
+                                  onClick={handleToggle}
+                                >
                                   <div
                                     className="px-4 py-2 hover:text-lightBlue"
                                     onClick={() => handleItemClick(item)}
@@ -148,14 +157,17 @@ const Navbar = () => {
                       </div>
                     ) : (
                       <div onClick={() => handleItem(item)}>
-                        <li>{item.title}</li>
+                        <li onClick={handleToggle}>{item.title}</li>
                       </div>
                     )}
                   </div>
                 ))}
-                <Link to={"/campaigns"}>
-                  <button className="family-sora h-[3.4rem] rounded-full border bg-lightBlue px-8 text-[1rem] font-semibold text-white">
-                    Explore Campaigns
+                <Link onClick={handleToggle} to={"/"}>
+                  <button
+                    className="family-sora h-[3.4rem] rounded-full border border-lightBlue bg-white px-10 text-[1rem] font-semibold text-lightBlue active:bg-lightBlue/95 active:text-white"
+                    onClick={() => setIsFormActive(!isFormActive)}
+                  >
+                    Create Campaign
                   </button>
                 </Link>
               </ul>

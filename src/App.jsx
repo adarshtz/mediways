@@ -1,18 +1,10 @@
 import "./App.css";
-import {
-  About,
-  Contact,
-  Home,
-  SpecialitiesPage,
-  Campaign,
-  CampaignDetails,
-  Services,
-  faq,
-} from "./pages";
+import { About, Campaign, CampaignDetails } from "./pages";
 import { Navbar } from "./components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import { Footer } from "./sections";
+import { FormProvider } from "../contextprovider";
 
 import axios from "axios";
 import TermsAndConditions from "./pages/terms-and-conditions";
@@ -83,19 +75,21 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <Navbar/>
-      <Routes>
-        <Route path="/" Component={Campaign} />
-        <Route path="/about" Component={About} />
-        <Route path="/faqs" Component={Faq} />
-        <Route path="/campaigns/:link" Component={CampaignDetails} />{" "}
-        <Route path="/terms-and-conditions" Component={TermsAndConditions} />
-        <Route path="/privacy-policy" Component={PrivacyPolicy} />{" "}
-        <Route path="/refund-policy" Component={RefundPolicy} />
-      </Routes>
-      <Footer />
-    </Router>
+    <FormProvider>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" Component={Campaign} />
+          <Route path="/about" Component={About} />
+          <Route path="/faqs" Component={Faq} />
+          <Route path="/campaigns/:link" Component={CampaignDetails} />{" "}
+          <Route path="/terms-and-conditions" Component={TermsAndConditions} />
+          <Route path="/privacy-policy" Component={PrivacyPolicy} />{" "}
+          <Route path="/refund-policy" Component={RefundPolicy} />
+        </Routes>
+        <Footer />
+      </Router>
+    </FormProvider>
   );
 }
 

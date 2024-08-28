@@ -9,26 +9,11 @@ export const NavbarData = [
     title: "About Us",
     link: "/about",
   },
-  {
-    id: 2,
-    title: "Services",
-    link: "/services",
-  },
-  {
-    id: 3,
-    title: "Specialities ",
-    link: "#",
-    dropdown: true,
-  },
+
   {
     id: 4,
     title: "FAQs",
     link: "/faqs",
-  },
-  {
-    id: 5,
-    title: "Contact Us",
-    link: "/contact",
   },
 ];
 
