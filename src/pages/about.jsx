@@ -23,42 +23,72 @@ const About = () => {
         </div>
       </div>
       <div className="verflow-hidden py-10">
-        <Heading
-          title={"About us"}
-          subtitle={
-            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula aenean massa. "
-          }
-        />
-        <div className="px-18 m-auto flex w-11/12 flex-wrap justify-center p-5 md:w-3/4">
-          <p className="family-sora">
-            Welcome to Mediways! your trusted partner in global healthcare
-            solutions. We understand that seeking medical treatment away from
-            home can be a daunting prospect, which is why we are here to guide
-            you every step of the way.
-            <br />
-            <br /> At Mediways Asia, we are committed to providing personalized
-            and seamless healthcare experiences to individuals seeking quality
-            medical care abroad. Our mission is to bridge the gap between
-            patients and world-class healthcare providers, offering access to
-            cutting-edge treatments and renowned medical professionals around
-            the globe.
-            <br />
-            <br /> With years of experience in the medical tourism industry, our
-            dedicated team strives to ensure that every aspect of your medical
-            journey is carefully planned and executed with precision. From
-            initial consultation to post-treatment care, we prioritize your
-            comfort, safety, and well-being above all else.
-          </p>
-          <div className="flex w-full flex-col flex-wrap gap-6 md:flex-row">
-            {AboutData.map((item, index) => (
-              <AboutCard
-                key={index}
-                title={item.title}
-                desc={item.desc}
-                img={item.img}
-              />
-            ))}
+        <Heading title={"About us"} />
+        <div className="px-18 family-sora m-auto flex w-11/12 flex-wrap space-y-8 p-5 md:w-3/4">
+          <div>
+            <h1 className="family-sora text-2xl font-bold text-black">
+              About Us
+            </h1>
+            <p>
+              Welcome to Mediways.in, your trusted partner in crowdfunding for
+              medical and social causes. Our mission is to make a meaningful
+              difference in the lives of those in need by harnessing the power
+              of community support. At Mediways.in, we believe that together, we
+              can overcome the most challenging circumstances.
+            </p>
           </div>
+          <div>
+            <h1 className="family-sora text-2xl font-bold text-black">
+              What we do
+            </h1>
+            <p>
+              Mediways.in is dedicated to raising funds for individuals and
+              communities facing medical emergencies and social hardships.
+              Whether it's covering medical expenses, supporting a cause close
+              to your heart, or helping someone rebuild their life, we provide a
+              platform where every contribution counts.
+            </p>
+          </div>
+          <div>
+            <h1 className="family-sora text-2xl font-bold text-black">
+              Why choose us?
+            </h1>
+            <p>
+              <ul className="family-sora space-y-3 px-10 py-2">
+                <li className="text-black">
+                  <span className="pr-2 font-bold">
+                    1. Constant Updates on All Campaigns:
+                  </span>
+                  We ensure you stay informed every step of the way with regular
+                  updates on the progress of the campaigns you support.
+                </li>
+                <li className="text-black">
+                  <span className="pr-2 font-bold">
+                    2. Safe and Transparent:
+                  </span>
+                  our trust is our priority. We maintain the highest standards
+                  of security and transparency, ensuring that every donation is
+                  used exactly as intended.
+                </li>
+                <li className="text-black">
+                  <span className="pr-2 font-bold">
+                    3. Verified Beneficiaries
+                  </span>
+                  We rigorously verify all beneficiaries to ensure that your
+                  contributions go to those who genuinely need help.
+                </li>
+              </ul>
+            </p>
+          </div>
+          <p>
+            We understand the urgency and importance of timely assistance, and
+            that's why we've created a user-friendly, transparent, and secure
+            platform that connects donors with those who need help the most. Our
+            goal is to empower people to make a difference, one donation at a
+            time. Join us in our mission to bring hope, healing, and positive
+            change. Together, we can turn compassion into action and create a
+            better tomorrow.
+          </p>
         </div>
       </div>
     </div>

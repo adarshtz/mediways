@@ -41,13 +41,15 @@ const Faq = () => {
           id="panel1-1a-header"
         >
           <p className="family-sora text-lightblue text-base font-semibold">
-            1. Patient Inquiry
+            1. What is Mediways?
           </p>
         </AccordionSummary>
         <AccordionDetails>
           <p className="family-sora">
-            Receive detailed reports and case history, including full name and
-            exact age.
+            Mediways serves as a no-cost fundraising platform, enabling
+            individuals, charities, and organizations to gather financial
+            support for their personal needs, social causes, and national
+            initiatives.
           </p>
         </AccordionDetails>
       </Accordion>
@@ -62,13 +64,21 @@ const Faq = () => {
           id="panel1-2a-header"
         >
           <p className="family-sora text-lightblue text-base font-semibold">
-            2. Medical Opinion
+            2. What are the causes supported on Mediways?
           </p>
         </AccordionSummary>
         <AccordionDetails>
           <p className="family-sora">
-            Send reports to partnered super specialty hospitals in India for
-            multiple opinions. Include doctor profiles for reference.
+            Mediways supports a wide range of causes through crowdfunding.
+            People use the platform to raise funds for themselves, friends and
+            family, favorite charities, and both national and social causes.
+            These include areas such as medical expenses, education,
+            emergencies, arts, rural development, and animal rescue. Mediways
+            categorizes fundraisers under topics like Animals, Arts & Media,
+            Children, Community, Environment, Human Rights, and more. However,
+            to maintain neutrality, Mediways does not host fundraisers related
+            to religious or political activities, personal loans, home loans,
+            financial debts, or business causes
           </p>
         </AccordionDetails>
       </Accordion>
@@ -83,14 +93,19 @@ const Faq = () => {
           id="panel1-3a-header"
         >
           <p className="family-sora text-lightblue text-base font-semibold">
-            3. Recommendation & Cost Estimate
+            3. How can I ensure that the money I’ve donated actually reaches the
+            intended beneficiary?
           </p>
         </AccordionSummary>
         <AccordionDetails>
           <p className="family-sora">
-            Forward doctor recommendations, estimated cost, and duration of stay
-            to the patient. Allow time for the patient to choose their preferred
-            hospital and location.
+            Rest assured that your donation reaches the intended beneficiary
+            through our robust processes. As soon as you make a contribution, an
+            email notification is sent to the organizer. Additionally, you’ll
+            receive periodic updates whenever they post new information. We
+            ensure that funds are transferred to the beneficiary based on
+            relevant documents and invoices, and we maintain transparency by
+            posting updates on the fundraiser page.
           </p>
         </AccordionDetails>
       </Accordion>
@@ -105,14 +120,35 @@ const Faq = () => {
           id="panel1-4a-header"
         >
           <p className="family-sora text-lightblue text-base font-semibold">
-            4. Visa Assistance
+            4. I completed a payment, but I haven’t received a payment receipt.
           </p>
         </AccordionSummary>
         <AccordionDetails>
           <p className="family-sora">
-            Provide assistance letter from the chosen hospital for the medical
-            visa process. Collect patient and attendant passport scans for
-            documentation.
+            <b>
+              If you’ve made a payment but haven’t received a receipt, follow
+              these steps:
+            </b>
+            <br />
+            <ul className="py-2">
+              <li>Log into your Mediways account.</li>
+              <li>Click on the ‘Dashboard’ section.</li>
+              <li>Look for your payment receipts there.</li>
+            </ul>
+            If you still can’t find the receipt, don’t worry! Reach out to us at
+            feedback@mymediways.in or send a message via WhatsApp to
+            +91-9116226875. Provide the following details:
+            <ul className="py-2">
+              <li>A screenshot of the payment.</li>
+              <li>Your name.</li>
+              <li>Your email address.</li>
+              <li>(Optional) Your phone number.</li>
+              <li>
+                The link to the fundraiser for which you made the donation.
+              </li>
+            </ul>
+            Our support team will assist you promptly and ensure you receive the
+            payment receipt if your transaction was successful.
           </p>
         </AccordionDetails>
       </Accordion>
@@ -127,13 +163,31 @@ const Faq = () => {
           id="panel1-5a-header"
         >
           <p className="family-sora text-lightblue text-base font-semibold">
-            5. Accommodation & Transportation
+            5. How to claim Tax Examption?
           </p>
         </AccordionSummary>
         <AccordionDetails>
           <p className="family-sora">
-            Compile a list of nearby hotels/guest houses for patient and
-            attendant. Arrange local transportation if needed.
+            Once your donation is successfully completed, you’ll notice a ‘GET
+            80G’ button on the payment success page. Click that button and
+            provide your PAN number, complete address, and name (matching your
+            PAN details). Your 80G certificate will be generated and sent to
+            your email within 24 hours. Alternatively, follow these steps to
+            obtain your 80G receipt: <br /> 1. Log in to your account using the
+            same email ID you used for the donation.
+            <br /> 2. Go to your ‘Profile’ section. <br />
+            3. Choose the relevant financial year for which you need the
+            donation certificate.
+            <br /> 4. Click on ‘Download 80G Certificate.’
+            <br /> 5. If required, fill out any additional forms.
+            <br /> 6. Submit the form, and your 80G certificate will be
+            instantly available for download.
+            <br /> Notably, instead of receiving separate 80G certificates for
+            each donation, you’ll receive a consolidated certificate via email
+            covering all your donations made through our platform during the
+            financial year. Additionally, the corresponding 10BE form, which
+            proves your eligibility for tax deduction, will also be
+            consolidated. This streamlines the process and saves you time.
           </p>
         </AccordionDetails>
       </Accordion>
@@ -148,13 +202,24 @@ const Faq = () => {
           id="panel1-6a-header"
         >
           <p className="family-sora text-lightblue text-base font-semibold">
-            6. Arrival & Escort
+            6. I made a payment but can't find my donation on the fundraiser.
           </p>
         </AccordionSummary>
         <AccordionDetails>
           <p className="family-sora">
-            Meet patient at the airport and escort to chosen destination (hotel
-            or hospital). Arrange hospital consultation upon request.
+            If your payment was debited from your bank account, but you haven’t
+            received a payment receipt from Mediways, please get in touch with
+            our support team. You can reach us via email at
+            feedback@mymediways.in or send us a message on WhatsApp at
+            +91-9116226875. Our dedicated team will promptly track your payment
+            and provide you with an update. When contacting us, please include
+            the following details: <br />• Name of the donor. <br />• Email ID
+            or phone number used during the donation process. <br />• A
+            screenshot of the payment. <br />• The link to the specific
+            fundraiser for which the donation was made.
+            <br /> We’re committed to ensuring transparency and addressing any
+            concerns you may have. Feel free to reach out, and we’ll assist
+            you!"
           </p>
         </AccordionDetails>
       </Accordion>
@@ -169,13 +234,21 @@ const Faq = () => {
           id="panel1-7a-header"
         >
           <p className="family-sora text-lightblue text-base font-semibold">
-            7. Hospital Assistance
+            7. How to get refund?
           </p>
         </AccordionSummary>
         <AccordionDetails>
           <p className="family-sora">
-            Assign a representative for all appointments, evaluations, and
-            treatments.
+            If you’ve made a donation and would like to request a refund, please
+            keep the following points in mind:
+            <br /> • Refunds can be issued only if the donation amount has not
+            already been withdrawn by the beneficiary.
+            <br /> • We recommend reviewing Mediways’ refund policy for detailed
+            information on how refunds are handled. <br />
+            To initiate a refund, please reach out to us via email at
+            feedback@mediways.in or send us a message on WhatsApp at
+            +91-9116226875. Our dedicated team will check the status of your
+            donation and assist you accordingly.
           </p>
         </AccordionDetails>
       </Accordion>
@@ -190,13 +263,19 @@ const Faq = () => {
           id="panel1-8a-header"
         >
           <p className="family-sora text-lightblue text-base font-semibold">
-            8. Communication & Updates
+            8. Is it safe to donate on Mediways?
           </p>
         </AccordionSummary>
         <AccordionDetails>
           <p className="family-sora">
-            Ensure family receives regular updates on patient's treatment
-            progress.
+            Our platform utilizes state-of-the-art payment encryption technology
+            (256-bit SSL encryption—the highest in the industry). Rest assured,
+            we never store any card or banking details of your donors. Privacy
+            is a top priority, and we never share personal information with
+            anyone. Additionally, donors have the option to remain anonymous to
+            both the organizer and the public while making their contributions.
+            For more information on security and privacy, feel free to refer to
+            our privacy policy. Your trust matters to us!
           </p>
         </AccordionDetails>
       </Accordion>
@@ -211,13 +290,26 @@ const Faq = () => {
           id="panel1-9a-header"
         >
           <p className="family-sora text-lightblue text-base font-semibold">
-            9. Additional Care
+            9. What happens to the funds if the patient dies?
           </p>
         </AccordionSummary>
         <AccordionDetails>
           <p className="family-sora">
-            Provide pre and post-operative care options, including medication
-            assistance.
+            When a patient, for whom funds were being raised, unfortunately
+            passes away before treatment begins and no funds have been
+            transferred yet, Milaap follows this protocol: <br />
+            1. <b>Donor Notification</b>: Donors are informed about the
+            patient’s demise and the non-transfer of funds.
+            <br /> 2. <b>Confirmation Process</b>: The patient’s family and
+            hospital confirm whether there are any pending bills related to the
+            treatment. <br />
+            3. <b>Options for Donors</b>: If no bills are outstanding, donors
+            are notified of the available funds. <br />
+            They can choose to re-route the donation to another patient or
+            request a refund. If donors prefer, the donation can be directed to
+            the original patient’s family or next-of-kin. We aim to handle such
+            situations with sensitivity and transparency. If you have any
+            further questions, feel free to ask!
           </p>
         </AccordionDetails>
       </Accordion>
@@ -232,34 +324,12 @@ const Faq = () => {
           id="panel1-10a-header"
         >
           <p className="family-sora text-lightblue text-base font-semibold">
-            10. Travel Arrangements
+            10. What is the fees of Mediways.in?
           </p>
         </AccordionSummary>
         <AccordionDetails>
           <p className="family-sora">
-            Assist with travel plans for patient and attendant, subject to
-            doctor's approval.
-          </p>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
-        className="px-1 py-3"
-        expanded={innerExpanded === "panel1-11"}
-        onChange={handleInnerChange("panel1-11")}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1-11a-content"
-          id="panel1-11a-header"
-        >
-          <p className="family-sora text-lightblue text-base font-semibold">
-            11. Departure & Follow-up
-          </p>
-        </AccordionSummary>
-        <AccordionDetails>
-          <p className="family-sora">
-            Organize return airport transfers and address post-operative queries
-            or follow-up needs.
+            We do not charge any fees whatsoever. We have 0% platform fee.
           </p>
         </AccordionDetails>
       </Accordion>
@@ -709,35 +779,7 @@ const Faq = () => {
                 fontSize: "16px",
               },
             }}
-          >
-            {steps.map((label, index) => (
-              <Step key={label}>
-                <StepButton
-                  color="inherit"
-                  onClick={handleStep(index)}
-                  sx={{
-                    "& .MuiStepIcon-root": {
-                      fontSize: 40,
-                      color: "gray",
-                      "&.Mui-active": {
-                        color: "#00367d",
-                      },
-                      "&.Mui-completed": {
-                        color: "#00367d",
-                      },
-                    },
-                    "& .MuiStepLabel-label": {
-                      color: "black",
-                      fontSize: "16px",
-                      fontWeight: activeStep === index ? "bold" : "normal",
-                    },
-                  }}
-                >
-                  <p className="family-sora text-xl font-bold">{label}</p>
-                </StepButton>
-              </Step>
-            ))}
-          </Stepper>
+          ></Stepper>
         </div>
 
         <div className="mt-12">{stepContent[activeStep]}</div>
