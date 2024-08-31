@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { FormContext } from "../../contextprovider";
 import FormModule from "../module/form-module";
+import banner from "../../public/assets/banner.jpg";
 
 const Campaign = () => {
   const [parsedData, setParsedData] = useState(null);
@@ -29,7 +30,7 @@ const Campaign = () => {
           <div className="relative">
             <div className="">
               <img
-                src="/public/assets/banner.jpg"
+                src={banner}
                 className="h-[35rem] w-full object-cover brightness-50"
               />
             </div>
