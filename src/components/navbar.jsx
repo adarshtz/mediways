@@ -3,7 +3,7 @@ import { MenuIcon } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import logo from "../../public/logo.png";
+import logo from "../../public/assets/logo.png";
 import { callAPI } from "../App";
 import { useContext } from "react";
 import { FormContext } from "../../contextprovider";

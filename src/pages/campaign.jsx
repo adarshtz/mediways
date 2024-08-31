@@ -29,7 +29,7 @@ const Campaign = () => {
           <div className="relative">
             <div className="">
               <img
-                src="banner.jpg"
+                src="/public/assets/banner.jpg"
                 className="h-[35rem] w-full object-cover brightness-50"
               />
             </div>

@@ -1,6 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Heading } from "../components";
-import { AboutData } from "../data";
-import AboutCard from "../components/about-card";
 
 const About = () => {
   return (
@@ -8,7 +7,7 @@ const About = () => {
       <div className="relative">
         <div className="">
           <img
-            src="banner.jpg"
+            src="/public/assets/banner.jpg"
             className="h-[35rem] w-full object-cover brightness-50"
           />
         </div>

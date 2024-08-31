@@ -1,8 +1,7 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
 
 import Stepper from "@mui/material/Stepper";
-import Step from "@mui/material/Step";
-import StepButton from "@mui/material/StepButton";
 
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -14,9 +13,6 @@ const steps = ["Process", "Visa", "Plan"];
 const Faq = () => {
   const [activeStep, setActiveStep] = useState(0);
 
-  const handleStep = (step) => () => {
-    setActiveStep(step);
-  };
   const [expanded, setExpanded] = useState(false);
   const [innerExpanded, setInnerExpanded] = useState(false);
 

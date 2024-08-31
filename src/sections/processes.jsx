@@ -1,5 +1,5 @@
-import ProcessDesign from "../../public/line.png";
-import ProcessMobile from "../../public/Processmobile.jpg";
+import ProcessDesign from "../../public/assets/line.png";
+import ProcessMobile from "../../public/assets/Processmobile.jpg";
 import { Heading } from "../components";
 
 export default function Processes() {

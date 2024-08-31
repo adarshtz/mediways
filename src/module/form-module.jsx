@@ -2,12 +2,33 @@ import { X } from "lucide-react";
 import { useContext } from "react";
 import { FormContext } from "../../contextprovider";
 import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 
 const FormModule = () => {
   const { isFormActive, setIsFormActive } = useContext(FormContext);
 
   const { register, handleSubmit } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    const serviceId = "service_2etdexx";
+    const templateId = "template_v8bmzvq";
+    const publicKey = "e4Ew1VeMYnj1yTU1n";
+
+    const templateParams = {
+      campaignName: data.campaignName,
+      beneficiaryName: data.beneficiaryName,
+    };
+
+    emailjs
+      .send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log("Email sent successfully:", response);
+      })
+      .catch((error) => {
+        console.error("Failed to send email:", error);
+      });
+
+    console.log(data);
+  };
 
   return (
     <div className="h-fit w-[45rem] rounded-md border bg-white p-5">
@@ -25,7 +46,11 @@ const FormModule = () => {
         </p>
       </div>
       <div id="card-content">
-        <form className="space-y-4 py-4" onSubmit={handleSubmit(onSubmit)}>
+        <form
+          id="my-form"
+          className="space-y-4 py-4"
+          onSubmit={handleSubmit(onSubmit)}
+        >
           <div>
             <label className="family-sora py-2 font-semibold">
               Campaign Name
@@ -35,6 +60,7 @@ const FormModule = () => {
               placeholder="enter your campaign name"
               {...register("campaignName")}
               className="h-[3rem] w-full rounded-md border border-darkBlue pl-2"
+              name="campaignName"
               required
             />
           </div>
