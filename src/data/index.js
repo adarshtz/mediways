@@ -142,6 +142,27 @@ export const FooterData = [
       },
     ],
   },
+  {
+    id: 2,
+    title: "Explore More",
+    list: [
+      {
+        id: 0,
+        title: "Our Mission",
+        link: "/our-mission",
+      },
+      {
+        id: 1,
+        title: "Campaigns",
+        link: "/",
+      },
+      {
+        id: 2,
+        title: "Our Purpose",
+        link: "/purpose",
+      },
+    ],
+  },
 ];
 
 export const CampDetail = [

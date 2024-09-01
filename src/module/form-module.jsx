@@ -71,6 +71,7 @@ const FormModule = () => {
             <input
               type="text"
               placeholder="enter the beneficiary name"
+              z
               {...register("beneficiaryName")}
               className="h-[3rem] w-full rounded-md border border-darkBlue pl-2"
               required

@@ -5,14 +5,14 @@ import ProgressBar from "./progress-bar";
 const CampaignCard = ({ title, beneficiary, thumbnail, target, donated }) => {
   return (
     <div className="h-content mt-8 w-[21.5rem] cursor-pointer rounded-lg border shadow-lg shadow-black/20 md:w-[24rem]">
-      <div className="overflow-hidden rounded-t-lg">
+      <div className="h-[12rem] overflow-hidden rounded-t-lg">
         <img
           src={thumbnail}
-          className="hover:scale-10 h-[15rem] w-[full] overflow-hidden rounded-t-lg object-cover transition"
+          className="hover:scale-10 h-full] w-[full] overflow-hidden rounded-t-lg object-cover transition"
         />
       </div>
       <div className="flex flex-col space-y-3 bg-white px-3 py-5">
-        <h1 className="family-sora text-[1.2rem] font-semibold text-darkBlue">
+        <h1 className="family-sora h-[4rem] text-[1.2rem] font-semibold text-darkBlue">
           {title}
         </h1>
         <p className="family-poppins text-[1rem] text-gray-700">
