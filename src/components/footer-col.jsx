@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"; // Use Link from react-router-dom
 import { FooterData } from "../data";
 
 const FooterCol = () => {
@@ -13,11 +12,11 @@ const FooterCol = () => {
             {item.title}
           </h1>
           {item.list.map((listItem, index) => (
-            <Link to={listItem.link} key={index}>
+            <a href={listItem.link} key={index}>
               <p className="family-inter text-[1rem] font-normal text-white/60">
                 {listItem.title}
               </p>
-            </Link>
+            </a>
           ))}
         </div>
       ))}

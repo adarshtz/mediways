@@ -9,6 +9,11 @@ export const NavbarData = [
     title: "About Us",
     link: "/about",
   },
+  {
+    id: 2,
+    title: "Our Mission",
+    link: "/mission",
+  },
 
   {
     id: 4,
@@ -213,5 +218,36 @@ export const AboutData = [
     img: "/public/about/card1.jpg",
     title: "Support Every Step of the Way",
     desc: " From visa assistance to travel arrangements and accommodation, we handle all logistical aspects of your medical trip, allowing you to focus solely on your health and recovery.",
+  },
+];
+
+export const CountingData = [
+  {
+    id: 0,
+    title: "Worth Donations",
+    value: "10",
+    span: "Cr+",
+    duration: 2,
+  },
+  {
+    id: 1,
+    title: "Unique Donors",
+    value: "10000",
+    span: "+",
+    duration: 1,
+  },
+  {
+    id: 2,
+    title: "NGO's Impacted",
+    value: "100",
+    span: "+",
+    duration: 2,
+  },
+  {
+    id: 3,
+    title: "Lives Save",
+    value: "10",
+    span: "K+",
+    duration: 2,
   },
 ];

@@ -1,14 +1,37 @@
 import { X } from "lucide-react";
-import { useContext } from "react";
+import { useContext, useState, useRef, useEffect } from "react";
 import { FormContext } from "../../contextprovider";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
+import { ClipLoader } from "react-spinners";
 
 const FormModule = () => {
   const { isFormActive, setIsFormActive } = useContext(FormContext);
 
-  const { register, handleSubmit } = useForm();
-  const onSubmit = (data) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const formRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (formRef.current && !formRef.current.contains(event.target)) {
+        // If the click event didn't target the form or its children, hide the form
+        // You can implement your hiding logic here, such as setting a state variable or using CSS to hide the form
+        setIsFormActive(false);
+        console.log("Form hidden");
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const { register, handleSubmit, reset } = useForm();
+  const onSubmit = async (data) => {
+    setIsSubmitting(true);
     const serviceId = "service_2etdexx";
     const templateId = "template_v8bmzvq";
     const publicKey = "e4Ew1VeMYnj1yTU1n";
@@ -18,16 +41,25 @@ const FormModule = () => {
       beneficiaryName: data.beneficiaryName,
     };
 
-    emailjs
-      .send(serviceId, templateId, templateParams, publicKey)
-      .then((response) => {
-        console.log("Email sent successfully:", response);
-      })
-      .catch((error) => {
-        console.error("Failed to send email:", error);
-      });
+    try {
+      await emailjs
+        .send(serviceId, templateId, templateParams, publicKey)
+        .then((response) => {
+          console.log("Email sent successfully:", response);
+        })
+        .catch((error) => {
+          console.error("Failed to send email:", error);
+        });
+      reset();
+    } catch (error) {
+      console.error("Fatal error occured", error);
+    } finally {
+      setIsSubmitting(false);
+      setIsFormActive(false);
+    }
 
     console.log(data);
+    console.log(isSubmitting);
   };
 
   return (
@@ -47,6 +79,7 @@ const FormModule = () => {
       </div>
       <div id="card-content">
         <form
+          ref={formRef}
           id="my-form"
           className="space-y-4 py-4"
           onSubmit={handleSubmit(onSubmit)}
@@ -128,7 +161,7 @@ const FormModule = () => {
             type="submit"
             className="family-poppins w-full rounded-md border bg-lightBlue px-4 py-3 font-semibold text-white"
           >
-            Submit Now
+            {isSubmitting ? <ClipLoader color="#FFFFFF" size={30} /> : "Submit"}
           </button>
         </form>
       </div>

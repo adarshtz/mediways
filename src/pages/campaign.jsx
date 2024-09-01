@@ -6,6 +6,7 @@ import { useContext } from "react";
 import { FormContext } from "../../contextprovider";
 import FormModule from "../module/form-module";
 import banner from "../../public/assets/banner.jpg";
+import Counting from "../sections/counting";
 
 const Campaign = () => {
   const [parsedData, setParsedData] = useState(null);
@@ -43,6 +44,9 @@ const Campaign = () => {
                 institutions delivering a fulfilling patient experience
               </p>
             </div>
+          </div>
+          <div>
+            <Counting />
           </div>
           <div className="overflow-hidden py-10">
             <Heading title={"Explore our Campaigns"} className={""} />

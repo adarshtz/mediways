@@ -11,6 +11,7 @@ import TermsAndConditions from "./pages/terms-and-conditions";
 import PrivacyPolicy from "./pages/privacy-policy";
 import RefundPolicy from "./pages/refund-policy";
 import Faq from "./pages/faq";
+import Mission from "./pages/mission";
 
 export const callAPI = async () => {
   try {
@@ -86,6 +87,7 @@ function App() {
           <Route path="/terms-and-conditions" Component={TermsAndConditions} />
           <Route path="/privacy-policy" Component={PrivacyPolicy} />{" "}
           <Route path="/refund-policy" Component={RefundPolicy} />
+          <Route path="/mission" Component={Mission} />
         </Routes>
         <Footer />
       </Router>
