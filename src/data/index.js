@@ -154,7 +154,7 @@ export const FooterData = [
       {
         id: 0,
         title: "Our Mission",
-        link: "/our-mission",
+        link: "/mission",
       },
       {
         id: 1,
