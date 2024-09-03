@@ -45,7 +45,7 @@ const Campaign = () => {
               </p>
             </div>
           </div>
-          <div>
+          <div className="mt-10">
             <Counting />
           </div>
           <div className="overflow-hidden py-10">

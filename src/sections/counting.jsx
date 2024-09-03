@@ -3,7 +3,7 @@ import { CountingData } from "../data";
 
 const Counting = () => {
   return (
-    <div className="mt-10 flex items-center justify-center gap-4 border flex-wrap">
+    <div className="flex flex-wrap items-center justify-center gap-4 border">
       {CountingData.map((item, index) => (
         <CountUps key={index} {...item} />
       ))}
