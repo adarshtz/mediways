@@ -12,13 +12,14 @@ const About = () => {
             className="h-[35rem] w-full object-cover brightness-50"
           />
         </div>
-        <div className="absolute bottom-10 ml-8 w-[70%] space-y-2 bg-black/60 px-10 py-5">
-          <h1 className="family-poppins text-4xl font-bold text-white">
+
+        <div className="absolute bottom-10 left-0 right-0 mx-auto w-[90%] space-y-2 bg-black/60 px-10 py-5 md:ml-8 md:w-[70%]">
+          <h1 className="family-poppins text-2xl font-bold text-white md:text-4xl">
             About us
           </h1>
-          <p className="family-poppins text-xl font-normal text-white">
+          <p className="family-poppins text-sm font-normal text-white md:text-xl">
             Your gateway to high-quality healthcare services and an unparalleled
-            holiday experience in India
+            holiday experience in I
           </p>
         </div>
       </div>
