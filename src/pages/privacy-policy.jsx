@@ -2,7 +2,7 @@ import { Heading } from "../components";
 
 export default function PrivacyPolicy() {
   return (
-    <div className="flex w-full flex-col items-center gap-8 p-12 py-14">
+    <div className="flex w-full flex-col items-center gap-8 p-12 py-14 md:px-14 md:pt-20">
       <Heading title={"Privacy Policy"} className={""} />
       <p className="family-poppins text-[1rem] text-gray-700">
         This privacy policy ("Policy") describes how Mediways ("Mediways," "we,"

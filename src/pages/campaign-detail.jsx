@@ -6,6 +6,8 @@ import parse from "html-react-parser";
 import { CampDetail } from "../data";
 import ProgressBar from "../components/progress-bar";
 
+import { FaLink, FaWhatsapp } from "react-icons/fa";
+
 const CustomNextArrow = (props) => (
   <button
     // eslint-disable-next-line react/prop-types
@@ -276,10 +278,6 @@ const CampaignDetails = () => {
                   <h1 className="family-sora text-md font-semibold text-darkBlue">
                     UPI QR Code
                   </h1>
-                  <p className="family-poppins text-sm font-normal text-gray-800">
-                    Here is the OR Code Image to donate. Just Scan, Pay and Help
-                    in our cause.
-                  </p>
 
                   <p className="mt-4 w-fit rounded-lg bg-white px-2 py-1 font-semibold text-darkBlue">
                     <img src={parsedData?.qrCode} />
@@ -287,6 +285,18 @@ const CampaignDetails = () => {
                 </div>
               )}
             </div>
+          </div>
+        </div>
+        <div className="mt-5 space-y-4 rounded-lg bg-transparent p-5">
+          <h1 className="family-sora text-md font-semibold text-darkBlue">
+            Share:
+          </h1>
+          <p className="family-poppins text-sm font-normal text-gray-800">
+            Share this to more people who wants to help us in this great cause
+          </p>
+          <div className="flex items-center space-x-2">
+            <FaLink size={24} />
+            <FaWhatsapp size={24} />
           </div>
         </div>
       </aside>

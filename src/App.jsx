@@ -4,6 +4,8 @@ import { Navbar } from "./components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import { Footer } from "./sections";
+
+import ScrollToTop from "./components/scroll-to-top";
 import { FormProvider } from "../contextprovider";
 
 import axios from "axios";
@@ -12,6 +14,7 @@ import PrivacyPolicy from "./pages/privacy-policy";
 import RefundPolicy from "./pages/refund-policy";
 import Faq from "./pages/faq";
 import Mission from "./pages/mission";
+import CreateCampaign from "./pages/create-campaign";
 
 export const callAPI = async () => {
   try {
@@ -78,6 +81,7 @@ function App() {
   return (
     <FormProvider>
       <Router>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" Component={Campaign} />
@@ -88,6 +92,7 @@ function App() {
           <Route path="/privacy-policy" Component={PrivacyPolicy} />{" "}
           <Route path="/refund-policy" Component={RefundPolicy} />
           <Route path="/mission" Component={Mission} />
+          <Route path="/create-campaign" Component={CreateCampaign} />
         </Routes>
         <Footer />
       </Router>

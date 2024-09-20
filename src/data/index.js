@@ -161,11 +161,6 @@ export const FooterData = [
         title: "Campaigns",
         link: "/",
       },
-      {
-        id: 2,
-        title: "Our Purpose",
-        link: "/purpose",
-      },
     ],
   },
 ];

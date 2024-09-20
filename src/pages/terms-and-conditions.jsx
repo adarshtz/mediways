@@ -3,7 +3,7 @@ import { Heading } from "../components";
 
 export default function TermsAndConditions() {
   return (
-    <div className="flex w-full flex-col items-center gap-8 md:p-12 p-4">
+    <div className="flex w-full flex-col items-center gap-8 p-4 md:px-14 md:pt-20">
       <Heading title={"Terms and Conditions"} className={""} />
       <p className="family-poppins text-[1rem] text-gray-700">
         Last Updated: 08/17/2024
@@ -20,7 +20,7 @@ export default function TermsAndConditions() {
       </p>
 
       {/* Section 1: Purchases/Donations */}
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           1. Purchases/Donations
         </h1>
@@ -35,7 +35,7 @@ export default function TermsAndConditions() {
       </div>
 
       {/* Section 2: Content */}
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           2. Content
         </h1>
@@ -51,7 +51,7 @@ export default function TermsAndConditions() {
       </div>
 
       {/* Section 3: Links to Other Websites */}
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           3. Links to Other Websites
         </h1>
@@ -68,7 +68,7 @@ export default function TermsAndConditions() {
       </div>
 
       {/* Section 4: Changes */}
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           4. Changes
         </h1>
@@ -82,7 +82,7 @@ export default function TermsAndConditions() {
       </div>
 
       {/* Section 5: Termination */}
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           5. Termination
         </h1>
@@ -95,7 +95,7 @@ export default function TermsAndConditions() {
       </div>
 
       {/* Section 6: Disclaimer */}
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           6. Disclaimer
         </h1>
@@ -108,7 +108,7 @@ export default function TermsAndConditions() {
       </div>
 
       {/* Section 7: Limitation of Liability */}
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           7. Limitation of Liability
         </h1>
@@ -129,7 +129,7 @@ export default function TermsAndConditions() {
       </div>
 
       {/* Section 8: Governing Law */}
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           8. Governing Law
         </h1>
@@ -143,7 +143,7 @@ export default function TermsAndConditions() {
       </div>
 
       {/* Section 9: Contact Us */}
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         <h1 className="family-sora text-left text-[1.2rem] font-semibold text-darkBlue">
           9. Contact Us
         </h1>

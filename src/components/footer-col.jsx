@@ -1,4 +1,5 @@
 import { FooterData } from "../data";
+import { Link } from "react-router-dom";
 
 const FooterCol = () => {
   return (
@@ -12,11 +13,11 @@ const FooterCol = () => {
             {item.title}
           </h1>
           {item.list.map((listItem, index) => (
-            <a href={listItem.link} key={index}>
+            <Link to={listItem.link} key={index}>
               <p className="family-inter text-[1rem] font-normal text-white/60">
                 {listItem.title}
               </p>
-            </a>
+            </Link>
           ))}
         </div>
       ))}

@@ -55,7 +55,7 @@ const About = () => {
               Why choose us?
             </h1>
             <p>
-              <ul className="family-sora space-y-3 px-10 py-2">
+              <ul className="family-sora space-y-3 py-6 md:px-10">
                 <li className="text-black">
                   <span className="pr-2 font-bold">
                     1. Constant Updates on All Campaigns:

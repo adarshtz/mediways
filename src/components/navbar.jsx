@@ -1,5 +1,5 @@
 import { NavbarData } from "../data";
-import { MenuIcon } from "lucide-react";
+import { CrossIcon, MenuIcon, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -110,21 +110,21 @@ const Navbar = () => {
         ))}
       </ul>
       <div className="hidden items-center gap-2 lg:flex">
-        <button
-          className="family-sora h-[3.4rem] rounded-full border border-lightBlue bg-white px-10 text-[1rem] font-semibold text-lightBlue active:bg-lightBlue/95 active:text-white"
-          onClick={() => setIsFormActive(!isFormActive)}
-        >
-          Create Campaign
-        </button>
+        <Link to={"/create-campaign"}>
+          <button className="family-sora h-[3.4rem] rounded-full border border-lightBlue bg-white px-10 text-[1rem] font-semibold text-lightBlue active:bg-lightBlue/95 active:text-white">
+            Create Campaign
+          </button>
+        </Link>
       </div>
       <div className="flex w-full justify-end py-5 lg:hidden">
         <button onClick={handleToggle} className="z-10">
-          <MenuIcon />
+          {toggleNavbar ? <X /> : <MenuIcon />}
         </button>
         <div>
           {toggleNavbar && (
-            <div className="">
-              <ul className="absolute right-0 flex h-screen w-[70%] flex-col items-center space-y-10 border-2 border-white bg-white p-4 pt-[10rem] shadow-md">
+            <div className="border">
+              <div className="z-3 absolute bottom-0 left-0 right-0 top-0 mt-[6rem] h-screen w-screen bg-black/80"></div>
+              <ul className="z-4 absolute right-0 flex h-screen w-[70%] flex-col items-center space-y-10 border-2 border-white bg-white p-4 pt-[10rem] shadow-md">
                 {NavbarData.map((item, index) => (
                   <div
                     key={index}

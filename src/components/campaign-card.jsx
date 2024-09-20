@@ -1,4 +1,4 @@
-import { FaLink, FaWhatsapp, FaHeart } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa";
 import ProgressBar from "./progress-bar";
 
 // eslint-disable-next-line react/prop-types
@@ -24,11 +24,6 @@ const CampaignCard = ({ title, beneficiary, thumbnail, target, donated }) => {
             <p className="family-inter pr-2">Donate Now</p>
             <FaHeart />
           </button>
-          <div className="flex items-center space-x-2">
-            <p className="family-poppins font-normal">Share :</p>
-            <FaLink size={19} />
-            <FaWhatsapp size={19} />
-          </div>
         </div>
       </div>
     </div>
