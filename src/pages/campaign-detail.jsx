@@ -6,7 +6,7 @@ import parse from "html-react-parser";
 import { CampDetail } from "../data";
 import ProgressBar from "../components/progress-bar";
 
-import { FaLink, FaWhatsapp } from "react-icons/fa";
+import { FaLink } from "react-icons/fa";
 
 const CustomNextArrow = (props) => (
   <button
@@ -63,6 +63,8 @@ const CampaignDetails = () => {
 
   const [selectedValue, setSelectedValue] = useState("upi");
 
+  const [donatedAmount, setDonatedAmount] = useState(0);
+
   const handleChange = (event) => {
     setSelectedValue(event.target.value);
   };
@@ -103,6 +105,14 @@ const CampaignDetails = () => {
 
     fetchData();
   }, []);
+
+  useEffect(() => {
+    if (parsedData?.amountDonated === undefined) {
+      setDonatedAmount(0);
+    } else {
+      setDonatedAmount(parsedData?.amountDonated);
+    }
+  });
 
   return (
     <div className="relative mx-auto flex max-w-screen-2xl flex-col justify-center pb-10 pt-32 md:flex-row md:px-32">
@@ -181,11 +191,26 @@ const CampaignDetails = () => {
             Donate via UPI & Bank Transfer (INR Only)
           </p>
         </div>
+        <div className="mt-5 space-y-4 rounded-lg bg-transparent p-5">
+          <h1 className="family-sora text-md font-semibold text-darkBlue">
+            Tax Benefits :
+          </h1>
+          {parsedData?.taxBenefit?.types?.map((item, index) => (
+            <div key={index} className="rounded-md border bg-white/40 p-3">
+              <h1 className="family-sora text-sm font-semibold text-darkBlue">
+                Name : {item.name}
+              </h1>
+              <p className="family-poppins text-sm font-normal text-gray-800">
+                {item.desc}
+              </p>
+            </div>
+          ))}
+        </div>
         <div className="space-y-4 rounded-lg bg-transparent p-5">
           <h1 className="family-manrope text-xl font-bold leading-7 text-darkBlue">
             Donation Progress:
           </h1>
-          <ProgressBar target={parsedData?.amount} donated={15621} />
+          <ProgressBar target={parsedData?.amount} donated={donatedAmount} />
         </div>
         <div className="space-y-4 rounded-lg bg-transparent p-5">
           <h1 className="family-manrope text-xl font-bold leading-7 text-darkBlue">
@@ -296,7 +321,6 @@ const CampaignDetails = () => {
           </p>
           <div className="flex items-center space-x-2">
             <FaLink size={24} />
-            <FaWhatsapp size={24} />
           </div>
         </div>
       </aside>

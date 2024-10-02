@@ -53,6 +53,7 @@ const Campaign = () => {
                   thumbnail={item.thumbnail}
                   target={item.amount}
                   donated={item.amountDonated}
+                  isTaxBenefit={item.taxBenefit.isTaxBenefit}
                 />
               </Link>
             ))}

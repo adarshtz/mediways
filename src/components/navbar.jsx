@@ -1,9 +1,9 @@
 import { NavbarData } from "../data";
-import { CrossIcon, MenuIcon, X } from "lucide-react";
+import { MenuIcon, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import logo from "../../public/assets/logo.png";
+import logo from "../../public/logo.svg";
 import { callAPI } from "../App";
 import { useContext } from "react";
 import { FormContext } from "../../contextprovider";
@@ -56,7 +56,7 @@ const Navbar = () => {
       <div className="flex items-center justify-center">
         <img
           src={logo}
-          className="w-20 cursor-pointer object-contain"
+          className="w-24 cursor-pointer object-contain"
           onClick={() => navigate("/")}
         />
       </div>
@@ -162,7 +162,7 @@ const Navbar = () => {
                     )}
                   </div>
                 ))}
-                <Link onClick={handleToggle} to={"/"}>
+                <Link onClick={handleToggle} to={"/create-campaign"}>
                   <button
                     className="family-sora h-[3.4rem] rounded-full border border-lightBlue bg-white px-10 text-[1rem] font-semibold text-lightBlue active:bg-lightBlue/95 active:text-white"
                     onClick={() => setIsFormActive(!isFormActive)}

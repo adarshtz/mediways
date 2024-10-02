@@ -63,7 +63,7 @@ const FormModule = () => {
   };
 
   return (
-    <div className="h-fit w-[45rem] rounded-md border bg-white p-5">
+    <div className="z-10 h-fit w-[45rem] rounded-md border bg-white p-5">
       <div id="card-header" className="flex justify-between">
         <h1 className="family-sora text-2xl font-bold text-darkBlue">
           Create a Campaign

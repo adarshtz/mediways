@@ -37,12 +37,12 @@ const Faq = () => {
           id="panel1-1a-header"
         >
           <p className="family-sora text-lightblue text-base font-semibold">
-            1. What is Mediways?
+            1. What is Aidcircle?
           </p>
         </AccordionSummary>
         <AccordionDetails>
           <p className="family-sora">
-            Mediways serves as a no-cost fundraising platform, enabling
+            Aidcircle serves as a no-cost fundraising platform, enabling
             individuals, charities, and organizations to gather financial
             support for their personal needs, social causes, and national
             initiatives.
@@ -60,19 +60,19 @@ const Faq = () => {
           id="panel1-2a-header"
         >
           <p className="family-sora text-lightblue text-base font-semibold">
-            2. What are the causes supported on Mediways?
+            2. What are the causes supported on Aidcircle?
           </p>
         </AccordionSummary>
         <AccordionDetails>
           <p className="family-sora">
-            Mediways supports a wide range of causes through crowdfunding.
+            Aidcircle supports a wide range of causes through crowdfunding.
             People use the platform to raise funds for themselves, friends and
             family, favorite charities, and both national and social causes.
             These include areas such as medical expenses, education,
-            emergencies, arts, rural development, and animal rescue. Mediways
+            emergencies, arts, rural development, and animal rescue. Aidcircle
             categorizes fundraisers under topics like Animals, Arts & Media,
             Children, Community, Environment, Human Rights, and more. However,
-            to maintain neutrality, Mediways does not host fundraisers related
+            to maintain neutrality, Aidcircle does not host fundraisers related
             to religious or political activities, personal loans, home loans,
             financial debts, or business causes
           </p>
@@ -127,12 +127,12 @@ const Faq = () => {
             </b>
             <br />
             <ul className="py-2">
-              <li>Log into your Mediways account.</li>
+              <li>Log into your AidCircle account.</li>
               <li>Click on the ‘Dashboard’ section.</li>
               <li>Look for your payment receipts there.</li>
             </ul>
             If you still can’t find the receipt, don’t worry! Reach out to us at
-            feedback@mymediways.in or send a message via WhatsApp to
+            feedback@myaidcircle.in or send a message via WhatsApp to
             +91-9116226875. Provide the following details:
             <ul className="py-2">
               <li>A screenshot of the payment.</li>
@@ -164,26 +164,18 @@ const Faq = () => {
         </AccordionSummary>
         <AccordionDetails>
           <p className="family-sora">
-            Once your donation is successfully completed, you’ll notice a ‘GET
-            80G’ button on the payment success page. Click that button and
-            provide your PAN number, complete address, and name (matching your
-            PAN details). Your 80G certificate will be generated and sent to
-            your email within 24 hours. Alternatively, follow these steps to
-            obtain your 80G receipt: <br /> 1. Log in to your account using the
-            same email ID you used for the donation.
-            <br /> 2. Go to your ‘Profile’ section. <br />
-            3. Choose the relevant financial year for which you need the
-            donation certificate.
-            <br /> 4. Click on ‘Download 80G Certificate.’
-            <br /> 5. If required, fill out any additional forms.
-            <br /> 6. Submit the form, and your 80G certificate will be
-            instantly available for download.
-            <br /> Notably, instead of receiving separate 80G certificates for
-            each donation, you’ll receive a consolidated certificate via email
-            covering all your donations made through our platform during the
-            financial year. Additionally, the corresponding 10BE form, which
-            proves your eligibility for tax deduction, will also be
-            consolidated. This streamlines the process and saves you time.
+            Only donations made to fundraisers that are set up by legally
+            registered non-profits (NGOs) or charities may be considered
+            eligible for donors to claim as a tax deduction. Look for a note
+            '80G tax benefits for INR donations' below the 'Donate Now' button
+            on the fundraiser. You can also filter for fundraisers with tax
+            benefits on the listing page here. Aidcircle is not an NGO and is
+            only a custodian of funds; hence, it cannot provide tax exemption.
+            If you have donated to a fundraiser that provides tax exemption, you
+            can download the tax receipt from your dashboard. To do so, you will
+            have to log in to your Aidcircle account using your email ID or
+            registered mobile number and then visit your dashboard to download
+            tax receipts.
           </p>
         </AccordionDetails>
       </Accordion>
@@ -204,9 +196,9 @@ const Faq = () => {
         <AccordionDetails>
           <p className="family-sora">
             If your payment was debited from your bank account, but you haven’t
-            received a payment receipt from Mediways, please get in touch with
+            received a payment receipt from AidCircle, please get in touch with
             our support team. You can reach us via email at
-            feedback@mymediways.in or send us a message on WhatsApp at
+            feedback@myaidcircle.in or send us a message on WhatsApp at
             +91-9116226875. Our dedicated team will promptly track your payment
             and provide you with an update. When contacting us, please include
             the following details: <br />• Name of the donor. <br />• Email ID
@@ -239,10 +231,10 @@ const Faq = () => {
             keep the following points in mind:
             <br /> • Refunds can be issued only if the donation amount has not
             already been withdrawn by the beneficiary.
-            <br /> • We recommend reviewing Mediways’ refund policy for detailed
-            information on how refunds are handled. <br />
+            <br /> • We recommend reviewing AidCircle’ refund policy for
+            detailed information on how refunds are handled. <br />
             To initiate a refund, please reach out to us via email at
-            feedback@mediways.in or send us a message on WhatsApp at
+            feedback@aidcircle.in or send us a message on WhatsApp at
             +91-9116226875. Our dedicated team will check the status of your
             donation and assist you accordingly.
           </p>
@@ -259,7 +251,7 @@ const Faq = () => {
           id="panel1-8a-header"
         >
           <p className="family-sora text-lightblue text-base font-semibold">
-            8. Is it safe to donate on Mediways?
+            8. Is it safe to donate on AidCircle?
           </p>
         </AccordionSummary>
         <AccordionDetails>
@@ -320,7 +312,7 @@ const Faq = () => {
           id="panel1-10a-header"
         >
           <p className="family-sora text-lightblue text-base font-semibold">
-            10. What is the fees of Mediways.in?
+            10. What is the fees of Aidcircle.in?
           </p>
         </AccordionSummary>
         <AccordionDetails>
